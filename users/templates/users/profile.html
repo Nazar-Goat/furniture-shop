@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cache %}
 {% load carts_tags %}
 
 {% block content %}
-
 <div class="row">
     <div class="container mt-5">
         <div class="row">
@@ -94,6 +94,9 @@
                 </div>
             </div>
             <!-- Оформленные заказы -->
+            {% comment %} {% cache 60 user_orders user.id %} {% endcomment %}
+            <div class="col-md-12">
+                <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
                     <h3 class="text-center mb-4">Мои заказы</h3>
                     <!-- Разметка заказов -->
                     <div class="container">
@@ -123,7 +126,7 @@
                                                     <td>{{ item.quantity }}</td>
                                                     <td>{{ item.price }}</td>
                                                     <td>{{ item.products_price }}</td>
-                                                    
+
                                                 </tr>
                                                 {% endfor %}
                                             </tbody>
@@ -134,18 +137,10 @@
                             {% endfor %}
                         </div>
                     </div>
-                    {% comment %} <div class="container">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading1">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div> {% endcomment %}
-                    <!-- Закончилась разметка заказов -->
+                 <!-- Закончилась разметка заказов -->
                 </div>
             </div>
+            {% comment %} {% endcache %} {% endcomment %}
         </div>
     </div>
 </div>
