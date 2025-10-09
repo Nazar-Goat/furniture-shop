@@ -40,6 +40,8 @@ class UserLoginView(LoginView):
 
                 messages.success(self.request, f"{user.username}, Вы вошли в аккаунт")
                 return HttpResponseRedirect(self.get_success_url())
+        return super().form_valid(form)
+        
             
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

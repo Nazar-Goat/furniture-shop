@@ -35,7 +35,7 @@ class CartChangeView(CartMixin, View):
         
         cart = self.get_cart(request, cart_id=cart_id)
 
-        cart.quantity = request.POST.get("quantity")
+        cart.quantity = int(request.POST.get("quantity", cart.quantity))
         cart.save()
 
         quantity = cart.quantity
