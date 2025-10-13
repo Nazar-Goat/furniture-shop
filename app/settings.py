@@ -159,18 +159,23 @@ INTERNAL_IPS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 
+# Настройки для продакшена
 if not DEBUG:
     INSTALLED_APPS = [app for app in INSTALLED_APPS if app != 'debug_toolbar']
     MIDDLEWARE = [mw for mw in MIDDLEWARE if 'debug_toolbar' not in mw]
-    
-    SECURE_SSL_REDIRECT = True
-    SESSION_COOKIE_SECURE = True
-    CSRF_COOKIE_SECURE = True
+    USE_X_FORWARDED_HOST = True
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_CONTENT_TYPE_NOSNIFF = True
     X_FRAME_OPTIONS = 'DENY'
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL= 'users.User'
 LOGIN_URL= '/user/login/'
 LOGIN_REDIRECT_URL = '/'
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:8080",
+    "http://127.0.0.1:8080",
+]
