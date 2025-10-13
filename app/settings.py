@@ -176,6 +176,7 @@ LOGIN_URL= '/user/login/'
 LOGIN_REDIRECT_URL = '/'
 
 CSRF_TRUSTED_ORIGINS = [
+    "http://172.30.84.213:8080",
     "http://localhost:8080",
     "http://127.0.0.1:8080",
 ]
