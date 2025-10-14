@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/banner.png" alt="Home Furniture Shop" width="100%" />
+  <img src="media\readme_images\banner.png" alt="Home Furniture Shop" width="100%" />
 </p>
 
 <h1 align="center">🏠 Home Furniture Shop</h1>
@@ -87,8 +87,7 @@ http://localhost:8080
 📷 *Примеры страниц:*
 
 <p align="center">
-  <img src="docs/screenshots/catalog.png" width="49%" />
-  <img src="docs/screenshots/product.png" width="49%" />
+  <img src="media\readme_images\catalog.png" width="49%" />
 </p>
 
 ---
@@ -102,7 +101,7 @@ http://localhost:8080
 📷 *Пример страницы корзины:*
 
 <p align="center">
-  <img src="docs/screenshots/cart.png" width="70%" />
+  <img src="media\readme_images\cart.png" width="70%" />
 </p>
 
 ---
@@ -116,12 +115,29 @@ http://localhost:8080
 📷 *Пример страницы авторизации:*
 
 <p align="center">
-  <img src="docs/screenshots/login.png" width="50%" />
+  <img src="media\readme_images\registration.png" width="50%" />
+  <img src="media\readme_images\authorization.png" width="50%" />
 </p>
 
 ---
 
-### **5. orders**
+### **5. profile**
+
+* Личный кабинет
+* Изменение данных пользователя
+* Корзина
+* Заказы
+
+📷 *Пример страницы авторизации:*
+
+<p align="center">
+  <img src="media\readme_images\personal_cabinet.png" width="50%" />
+  
+</p>
+
+---
+
+### **6. orders**
 
 * Создание и оформление заказа
 * Проверка данных и корзины
@@ -130,7 +146,7 @@ http://localhost:8080
 📷 *Пример страницы оформления заказа:*
 
 <p align="center">
-  <img src="docs/screenshots/order.png" width="60%" />
+  <img src="media\readme_images\order.png" width="60%" />
 </p>
 
 ---
@@ -146,17 +162,4 @@ http://localhost:8080
 ✅ Кэширование и оптимизация запросов
 ✅ Тесты ко всем приложениям
 
----
-
-##  Автор
-
-**Nazar**
-📧 *Python Backend Developer*
-💼 *Django · PostgreSQL · Docker · REST API*
-
----
-
-
-
-Хочешь, чтобы я сделал этот баннер?
 ```
