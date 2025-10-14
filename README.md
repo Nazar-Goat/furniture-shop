@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media\readme_images\banner.png" alt="Home Furniture Shop" width="100%" />
+  <img src="readme_images/banner.png" alt="Home Furniture Shop" width="100%" />
 </p>
 
 <h1 align="center">🏠 Home Furniture Shop</h1>
@@ -37,7 +37,7 @@
 
 ### 1️⃣ Клонируйте репозиторий:
 ```bash
-git clone https://github.com/your-username/furniture-shop.git
+git clone https://github.com/Nazar-Goat/furniture-shop.git
 cd furniture-shop
 ````
 
@@ -87,7 +87,7 @@ http://localhost:8080
 📷 *Примеры страниц:*
 
 <p align="center">
-  <img src="media\readme_images\catalog.png" width="49%" />
+  <img src="readme_images/catalog.png" width="49%" />
 </p>
 
 ---
@@ -101,7 +101,7 @@ http://localhost:8080
 📷 *Пример страницы корзины:*
 
 <p align="center">
-  <img src="media\readme_images\cart.png" width="70%" />
+  <img src="readme_images/cart.png" width="70%" />
 </p>
 
 ---
@@ -115,8 +115,8 @@ http://localhost:8080
 📷 *Пример страницы авторизации:*
 
 <p align="center">
-  <img src="media\readme_images\registration.png" width="50%" />
-  <img src="media\readme_images\authorization.png" width="50%" />
+  <img src="readme_images/registration.png" width="50%" />
+  <img src="readme_images/authorization.png" width="50%" />
 </p>
 
 ---
@@ -131,7 +131,7 @@ http://localhost:8080
 📷 *Пример страницы авторизации:*
 
 <p align="center">
-  <img src="media\readme_images\personal_cabinet.png" width="50%" />
+  <img src="readme_images/personal_cabinet.png" width="50%" />
   
 </p>
 
@@ -146,7 +146,7 @@ http://localhost:8080
 📷 *Пример страницы оформления заказа:*
 
 <p align="center">
-  <img src="media\readme_images\order.png" width="60%" />
+  <img src="readme_images/order.png" width="60%" />
 </p>
 
 ---
