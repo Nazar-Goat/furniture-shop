@@ -171,6 +171,3 @@ http://localhost:8080
 ✅ Django Admin panel
 ✅ Query optimization and caching
 
----
-
-Хочешь, чтобы я адаптировал этот README под стиль Upwork-портфолио (чуть короче и более презентабельно, с упором на стек и функциональность)?
