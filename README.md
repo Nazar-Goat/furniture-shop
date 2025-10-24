@@ -1,47 +1,51 @@
+
+
 <p align="center">
   <img src="readme_images/banner.png" alt="Home Furniture Shop" width="100%" />
 </p>
 
 <h1 align="center">🏠 Home Furniture Shop</h1>
-<h3 align="center">Интернет-магазин мебели на Django + PostgreSQL + Docker</h3>
+<h3 align="center">Online Furniture Store built with Django + PostgreSQL + Docker</h3>
 
 <p align="center">
-  <b>Регистрация · Авторизация · Каталог товаров · Корзина · Заказы · Админ-панель</b><br>
-  <b>Поиск · Сортировка · Фильтры · Пагинация · Кэширование</b>
+  <b>Registration · Authentication · Product Catalog · Cart · Orders · Admin Panel</b><br>
+  <b>Search · Sorting · Filters · Pagination · Caching</b>
 </p>
 
 ---
 
-**Home Furniture Shop** — это полнофункциональный интернет-магазин мебели, разработанный на **Django 4.2**, с использованием **PostgreSQL** в качестве базы данных и **Docker Compose** для контейнеризации и деплоя.  
-Проект полностью готов к развёртыванию на сервере.
+**Home Furniture Shop** is a fully functional online furniture store built with **Django 4.2**, using **PostgreSQL** as the database and **Docker Compose** for containerization and deployment.
+The project is fully ready for deployment on a production server.
 
 ---
 
-## Технологии
+## Technologies
 
-- **Python 3.11+**
-- **Django 4.2.23**
-- **PostgreSQL 15**
-- **Docker & Docker Compose**
-- **Gunicorn**
-- **Nginx**
-- **Pillow**
-- **python-decouple**
-- **django-debug-toolbar**
-- **Bootstrap 5** (в шаблонах)
+* **Python 3.11+**
+* **Django 4.2.23**
+* **PostgreSQL 15**
+* **Docker & Docker Compose**
+* **Gunicorn**
+* **Nginx**
+* **Pillow**
+* **python-decouple**
+* **django-debug-toolbar**
+* **Bootstrap 5** (used in templates)
 
 ---
+
 ---
 
-## ⚙️ Установка и запуск через Docker
+## ⚙️ Installation and Launch with Docker
 
-### 1️⃣ Клонируйте репозиторий:
+### 1️⃣ Clone the repository:
+
 ```bash
 git clone https://github.com/Nazar-Goat/furniture-shop.git
 cd furniture-shop
-````
+```
 
-### 2️⃣ Создайте файл `.env.prod` в корне проекта:
+### 2️⃣ Create the `.env.prod` file in the project root:
 
 ```bash
 DEBUG=False
@@ -54,13 +58,13 @@ DB_HOST=db
 DB_PORT=5432
 ```
 
-### 3️⃣ Соберите и запустите контейнеры:
+### 3️⃣ Build and start the containers:
 
 ```bash
 docker-compose up -d --build
 ```
 
-После сборки сайт будет доступен по адресу:
+After building, the website will be available at:
 
 ```
 http://localhost:8080
@@ -68,23 +72,31 @@ http://localhost:8080
 
 ---
 
-## 🗂 Приложения проекта
+## 🗂 Project Applications
 
 ### **1. main**
 
-* Главная страница магазина
-* Навигация по категориям
-* Отображение популярных товаров
+* Home page of the shop
+* Navigation by categories
+* Display of popular products
+
+📷 *Example:*
+
+<p align="center">
+  <img src="readme_images/catalog.png" width="49%" />
+</p>
+
+---
 
 ### **2. goods**
 
-* Каталог всех товаров
-* Поиск (`/catalog/search/`)
-* Фильтр по категориям (`/catalog/<category_slug>/`)
-* Сортировка и фильтрация по скидкам
-* Подробная страница товара (`/catalog/product/<slug>/`)
+* Full product catalog
+* Search (`/catalog/search/`)
+* Filter by category (`/catalog/<category_slug>/`)
+* Sorting and filtering by discounts
+* Product detail page (`/catalog/product/<slug>/`)
 
-📷 *Примеры страниц:*
+📷 *Example pages:*
 
 <p align="center">
   <img src="readme_images/catalog.png" width="49%" />
@@ -94,11 +106,11 @@ http://localhost:8080
 
 ### **3. carts**
 
-* Добавление и удаление товаров из корзины
-* Подсчёт итоговой суммы
-* AJAX-обновление корзины без перезагрузки страницы
+* Add and remove items from the cart
+* Calculate total amount
+* AJAX cart updates without page reload
 
-📷 *Пример страницы корзины:*
+📷 *Example cart page:*
 
 <p align="center">
   <img src="readme_images/cart.png" width="70%" />
@@ -108,11 +120,11 @@ http://localhost:8080
 
 ### **4. users**
 
-* Регистрация и авторизация пользователей
-* Восстановление пароля
-* Профиль пользователя и история заказов
+* User registration and authentication
+* Password recovery
+* User profile and order history
 
-📷 *Пример страницы авторизации:*
+📷 *Example authentication pages:*
 
 <p align="center">
   <img src="readme_images/registration.png" width="50%" />
@@ -123,27 +135,25 @@ http://localhost:8080
 
 ### **5. profile**
 
-* Личный кабинет
-* Изменение данных пользователя
-* Корзина
-* Заказы
+* Personal account
+* Edit user information
+* Cart overview
+* Orders list
 
-📷 *Пример страницы авторизации:*
+📷 *Example profile page:*
 
 <p align="center">
   <img src="readme_images/personal_cabinet.png" width="50%" />
-  
 </p>
 
 ---
 
 ### **6. orders**
 
-* Создание и оформление заказа
-* Проверка данных и корзины
-* Подтверждение покупки
+* Order creation and checkout
+* Data and cart validation
+* Purchase confirmation
 
-📷 *Пример страницы оформления заказа:*
 
 <p align="center">
   <img src="readme_images/order.png" width="60%" />
@@ -151,15 +161,16 @@ http://localhost:8080
 
 ---
 
-## 🧠 Основные функции
+## 🧠 Key Features
 
-✅ Регистрация и вход пользователей
-✅ Каталог с категориями и фильтрацией
-✅ Скидки и динамическая цена товара
-✅ Корзина с подсчётом итоговой суммы
-✅ Оформление заказа
-✅ Панель администратора Django
-✅ Кэширование и оптимизация запросов
-✅ Тесты ко всем приложениям
+✅ User registration and login
+✅ Catalog with categories and filters
+✅ Discounts and dynamic product pricing
+✅ Cart with total calculation
+✅ Order checkout process
+✅ Django Admin panel
+✅ Query optimization and caching
 
-```
+---
+
+Хочешь, чтобы я адаптировал этот README под стиль Upwork-портфолио (чуть короче и более презентабельно, с упором на стек и функциональность)?
